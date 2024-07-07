@@ -1,0 +1,250 @@
+/* common css */
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+:root{
+      --firstFont: "Open Sans", sans-serif;
+      --secondfont: "Abril Fatface", serif;
+      --thirdfont: "Ubuntu", sans-serif;
+      --primaryclr: #292929;
+      --scndcolor: #0f2f44;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+}
+body{
+    font-family: var(--firstFont);
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.container{
+    width: 1170px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.align-center{
+    align-items: center;
+}
+.btn{
+    background-color: #8383bf;
+    padding: 19px;
+    display: inline-block;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+    border: 1px solid #8383bf;
+}
+
+/* common css ends */
+
+/* fisrt navbar */
+#navy{
+    height: 44px;
+    background-color:var(--scndcolor);
+    margin: auto;
+}
+#navy .mnu{
+    width: 50%;
+}
+#navy .mnu p{
+    color: #fefefe;
+    font-family: var(--thirdfont);
+    font-size: 16px;
+    margin-top: 12px;
+}
+#navy .mnu2 p{
+    color: #fefefe;
+    font-family: var(--thirdfont);
+    font-size: 16px;
+    margin-top: 12px;
+}
+/* first navbar ends */
+/* nav */
+nav{ 
+    margin-top: 44px;
+    margin-bottom: 32px;
+}
+nav .logo{
+    width: 30%;
+}
+nav .menu{
+    width: 70%;
+    text-align: right;
+}
+nav .menu ul li{
+    display: inline-block;
+}
+nav .menu ul li a{
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--thirdfont);
+    padding: 18px 22px 5px;
+    display: inline-block;
+}
+
+nav .menu ul li a:hover{
+    color: #ffc712;
+    background-color: #fff9e6;
+}
+/* nav ebds */
+/* success */
+#background{
+    background-image: url(../images/Backgroung.jpg);
+    height: 595px;
+    background-size: cover;
+    background-position: center;
+}
+#background .box h4{
+font-family: var(--thirdfont);
+font-size: 50px;
+color: var(--scndcolor);
+font-weight: 400;
+padding-top: 60px;
+}
+#background .box h1{
+    font-family: var(--secondfont);
+    font-size: 80px;
+    color: var(--scndcolor);
+    font-weight: 400;
+    margin-top: -10px;
+}
+#background .box h3{
+font-family: var(--thirdfont);
+font-size: 32px;
+color: #8484bf;
+font-weight: 400;
+word-spacing: 10px;
+letter-spacing: 8px;
+margin-top: -10px;
+}
+#background .box p{
+font-size: 14px;
+color: #444444;
+margin-top: 33px;
+margin-bottom: 33px;
+}
+/* suceess ends */
+/* about */
+#about{
+    margin-top: 110px;
+}
+#about .aboutxt{
+    width: 50%;
+}
+#about .aboutimg{
+    width: 50%;
+}
+#about .aboutxt p{
+font-family: var(--thirdfont);
+font-weight: 400px;
+line-height: 200%;
+font-size: 14px;
+color: var(--scndcolor);
+}
+#about .aboutxt h4{
+font-family: var(--secondfont);
+font-size: 32px;
+font-weight: 400;
+color: var(--primaryclr);
+padding-bottom: 30px;
+}
+#about .aboutxt span p{
+margin-top: 35px;
+margin-left: 20px;
+padding-bottom: 30px;
+line-height: 35px;
+}
+#about .aboutxt button{
+    padding: 10px;
+    color: var(--scndcolor);
+    margin-top: 10px;
+    margin-right: 20px;
+    background: #e0e0e0;
+    box-shadow:  7px 7px 10px #868686,
+    -7px -7px 10px #ffffff;
+   border: none;
+}
+#about .aboutxt button:hover{
+    background-color: #ffc712;
+    transform: scale(1.1);
+    transition: 1.5s
+}
+
+/* about ends */
+/* skill */
+#skiils .our{
+    display: flex;
+    margin-top: 90px;
+}
+#skills .skillsImg{
+    width: 40%;
+}
+#skiils .skiLLImage{
+    width: 60%;
+    margin-top: 50px;
+}
+#skiils .skiLLImage p{
+    font-family: var(--thirdfont);
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--scndcolor);
+}
+#skiils .skiLLImage h4{
+    font-family: var(--secondfont);
+    font-size: 32px;
+    font-weight: 800;
+    color: var(--primaryclr);
+    padding-bottom: 30px;
+}
+#skiils .skiLLImage p{
+    font-family: var(--thirdfont);
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--scndcolor);
+}
+/* skill end */
+/* movie */
+#movie{
+    background-color: #f5f5f5;
+}
+#movie p{
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--scndcolor);
+    font-family: var(--thirdfont);
+   padding-top: 40px
+}
+#movie h1{
+    text-align: center;
+    font-size: 32px;
+    font-family: var(--secondfont);
+    font-weight: 400;
+    color:var(--primaryclr);
+
+}
+#movie .pencil{
+    width: 350px;
+    justify-content: space-between;
+   margin-top: 60px;
+   margin-left: 25px;
+   margin-bottom: 50px;
+}
+#movie .cut h5{
+    font-family: var(--thirdfont);
+    font-size: 16px;
+    font-weight: 800;
+    color: var(--scndcolor);
+    padding-left: 30px;
+    margin-top: 30px;
+}
+/* movie ends */
